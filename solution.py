@@ -87,16 +87,16 @@ def grid_values(grid):
             Keys: The boxes, e.g., 'A1'
             Values: The value in each box, e.g., '8'. If the box has no value, then the value will be '123456789'.
     """
-    values = []
-    all_digits = '123456789'
+    chars = []
+    digits = '123456789'
     for c in grid:
+        if c in digits:
+            chars.append(c)
+        # Replace . with digits
         if c == '.':
-            values.append(all_digits)
-        elif c in all_digits:
-            values.append(c)
-    assert len(values) == 81
-    return dict(zip(boxes, values))
-    pass
+            chars.append(digits)
+    assert len(chars) == 81
+    return dict(zip(boxes, chars))
 
 def display(values):
     """
