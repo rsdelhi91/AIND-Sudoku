@@ -156,12 +156,14 @@ def reduce_puzzle(values):
     while not stalled:
         # Check how many boxes have a determined value
         solved_values_before = len([box for box in values.keys() if len(values[box]) == 1])
+
         # Use the Eliminate Strategy
         values = eliminate(values)
         # Use the Only Choice Strategy
         values = only_choice(values)
         # Use the Naked Twin Strategy
         values = naked_twins(values)
+
         # Check how many boxes have a determined value, to compare
         solved_values_after = len([box for box in values.keys() if len(values[box]) == 1])
         # If no new values were added, stop the loop.
@@ -200,6 +202,7 @@ def solve(grid):
         The dictionary representation of the final sudoku grid. False if no solution exists.
     """
     values = grid_values(grid)
+    # Start solving using search
     work = search(values)
     if work:
         return work
