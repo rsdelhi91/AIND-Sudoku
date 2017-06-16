@@ -7,7 +7,7 @@ A: We use Constraint Propagation in this assignment which is used to apply a giv
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: The Diagonal sudoku problem is quite straightforward to identify as we take the diagonals as a separate unit on its own by looking at the indices to identify the relevant boxes and adding it to our list of units in the variable unitlist (Look at solution.py). Following this, we treat the diagonals as a normal unit and perform the same steps that would be conducted in any given unit formation on the board.
+A: The Diagonal sudoku problem is quite straightforward to address - we take the diagonals as a separate unit on its own by looking at the indices to identify the relevant boxes and adding it to our list of units in the variable unitlist (Look at solution.py). Following this, we treat the diagonals as a normal unit and perform the same steps that would be conducted in any given unit formation on the board.
 
 ### Install
 
