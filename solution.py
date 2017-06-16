@@ -135,8 +135,9 @@ def only_choice(values):
     Output: The resulting sudoku in dictionary form.
     """
     for unit in unitlist:
-        for digit in '123456789':
+        for digit in cols:
             dplaces = [box for box in unit if digit in values[box]]
+            # Set the value of the box if only one possibility is valid
             if len(dplaces) == 1:
                 values = assign_value(values, dplaces[0], digit)
     return values
