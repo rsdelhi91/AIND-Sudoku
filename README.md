@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: We use Constraint Propagation in this assignment which is used to apply a given constraint to a problem repeatedly until a solution is obtained or till the constraint can no longer be used, thus resulting in failure. In this solution, the Naked Twins problem is addressed by first finding pairs of boxes having 2 possibilities within a given unit and then identifying if the boxes outlined have the same possibilities. If yes, then they are Naked Twins and the rest of the elements within that unit should remove those given values thus further refining the solution.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: The Diagonal sudoku problem is quite straightforward to identify as we take the diagonals as a separate unit on its own by looking at the indices to identify the relevant boxes and adding it to our list of units in the variable unitlist (Look at solution.py). Following this, we treat the diagonals as a normal unit and perform the same steps that would be conducted in any given unit formation on the board.
 
 ### Install
 
