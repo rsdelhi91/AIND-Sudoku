@@ -4,7 +4,7 @@
 # using techniques like constraint propagation to identify certain rules and use them to branch 
 # out and try to identify possible solutions for the given Sudoku puzzle. 
 # 
-# Author Name: Rahul Sharma
+# Author: Rahul Sharma
 # Email: sharma1@student.unimelb.edu.au
 #
 #-----------------------------------------------------------------------------------------------
