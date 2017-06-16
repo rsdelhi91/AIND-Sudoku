@@ -3,9 +3,9 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: We use Constraint Propagation in this assignment which is used to apply a given constraint to a problem repeatedly until a solution is obtained or till the constraint can no longer be used, thus resulting in failure. In this solution, the Naked Twins problem is addressed by first finding pairs of boxes having 2 possibilities within a given unit and then identifying if the boxes outlined have the same possibilities (for ex: If F3 and I3 have the same possible values as 23). If yes, then they are Naked Twins and the rest of the boxes within that unit should remove those given values thus further refining the solution.
+A: We use Constraint Propagation in this assignment which is used to apply a given constraint to a problem repeatedly until a solution is obtained or till the constraint can no longer be used, thus resulting in failure. In this solution, the Naked Twins problem is addressed by first finding pairs of boxes having 2 possibilities within a given unit and then identifying if the boxes outlined have the same possibilities (for ex: If F3 and I3 in the image below have the same possible values as 23). If yes, then they are Naked Twins and the rest of the boxes within that unit should remove those given values thus further refining the solution.
 
-![Naked Twins](https://github.com/rsdelhi91/AIND-Sudoku/blob/master/images/naked-twins.png)
+![Naked Twins](https://github.com/rsdelhi91/AIND-Sudoku/raw/master/images/naked-twins.png)
 
 
 # Question 2 (Diagonal Sudoku)
